@@ -1,0 +1,9 @@
+arabic-numeral-to-chinese-number:
+  id: arabic-numeral-to-chinese-number.dev.v0
+  description: Test the model's ability to translate Arabic numerals into written-out Chinese numbers.
+  metrics: [accuracy]
+
+arabic-numeral-to-chinese-number.dev.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: number_reading/arabic_numeral_to_chinese_number.jsonl
